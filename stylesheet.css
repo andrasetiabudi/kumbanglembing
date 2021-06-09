@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Lucida Grande";
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .clear {
+    clear: left;
+  }
+  
+  .container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  .top-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url(https://i.ibb.co/NL8bcFK/background.png);
+    background-size: cover;
+    color: white;
+    text-align: center;
+  }
+  
+  .top-wrapper h1 {
+  
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .top-wrapper p {
+    margin-bottom: 3px;
+  }
+  
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(135, 135, 139, 0.9);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    width: 190px;
+    margin-top: 10px;
+  }
+  
+  .header-left {
+    float: left;
+  }
+  
+  .header-right {
+    float: right;
+    margin-right: -25px;
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+  .header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+/*menambahkan efek garis bawah ketika disorot*/
+  .header-right a::after {
+    content: '';
+  	width: 0%;
+  	height: 2px;
+  	background: #f44336;
+  	display: block;
+  	margin: auto;
+  	transition: 0.5s;
+  }
+  
+  .header-right a:hover::after {
+    width: 100%;
+  }
+  /* Tambahkan CSS untuk menu-icon */
+  .menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    /* Gantikan property display ke none */
+    display:  none;
+  }
+  .button {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .button:hover {
+    opacity: 1;
+  }
+
+  /*menambahkan efek garis bawah ketika di sorot*/
+  .button::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+
+  .button:hover::after {
+    width: 100%;
+  }
+
+  .lesson-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  .heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
+  }
+  
+  .heading h2 {
+    font-weight: normal;
+  }
+  .heading img {
+    padding-top:30px;
+    width:300px;
+  }
+  .lesson {
+    float: left;
+    width: 33%;
+  }
+  
+  .lesson-icon {
+    padding-top:10px;
+  }
+  
+  .lesson-icon p {
+    padding-top:10px;
+    width: 100%;
+  }
+  .lesson img {
+    width: 125px;
+  }
+  .text-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 15px;
+    color: #b3aeb5;
+  }
+  
+  .heading h3 {
+    font-weight: normal;
+  }
+  
+  .message-wrapper {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: center;
+  }
+  
+  .message {
+    padding: 15px 40px;
+    background-color: #5dca88;
+    cursor: pointer;
+    box-shadow: 0 7px #1a7940;
+  }
+  
+  .message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+  
+  .main {
+    padding: 10px 80px;
+    text-align:center;
+    background-color: #d9d9d8;
+  }
+  
+  .contact-form {
+    padding-top: 10px;
+  }
+  
+  .contact-submit {
+    padding: 15px 40px;
+    background-color: #5dca88;
+    cursor: pointer;
+    box-shadow: 0 7px #4d4d4d;
+  }
+  
+  .contact-submit:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+
+
+  /* Add CSS for <input> and <textarea> tags */
+  input, textarea{
+    width:400px;
+    margin-top:10px;
+    margin-bottom:30px;
+    padding:20px;
+    font-size:18px;
+    border:1px solid #dee7ec;
+  }
+  
+  /* Add CSS for contact-submit */
+  .contact-submit{
+    background-color:#dee7ec;
+    color:#889eab;
+  }
+  
+  
+  footer img {
+    width: 200px;
+    padding-bottom:5px;
+  }
+  
+  footer p {
+    color: #b3aeb5;
+    font-size: 12px;
+  }
+  
+  footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .fa {
+    margin: 5px;
+  }
+  .footer-left{
+    float:left;
+  }
+  .footer-right{
+    float:right;
+  }
+  .blok-atas{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 60px;
+  }
+  .perusahaan{
+    float:left;
+    padding:20px;
+    font-size:8px;
+    color:#4a4a4a;
+    letter-spacing:2px;
+  }
+  .alamat{
+    float:right;
+    padding:20px;
+    letter-spacing:1px;
+  }
+  .facebook {
+    background-color: #3b5998;
+    margin-right: 10px;
+  }
+  .twitter {
+    background-color: #55acee;
+      margin-right: 10px;
+  }
+  .instagram {
+    background-color: #4b3200;
+  }
+  .btn {
+    padding: 5px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+  }
+  .btn:hover {
+    opacity: 1;
+  }
+  
